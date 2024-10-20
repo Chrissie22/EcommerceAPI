@@ -50,19 +50,9 @@ REST_FRAMEWORK = {
     ],
 }
 
-CORS_ALLOWED_ORIGINS = [
-"http://www.website.com",
-"http://localhost:3000",
-"http://localhost:4200",
-"https://web.postman.co",
-]
 
-CORS_ALLOW_METHODS = [
-"GET",
-"PUT",
-"DELETE",
-"POST",
-]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -147,7 +137,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+CORS_ALLOW_ALL_ORIGINS = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -155,7 +145,7 @@ STATIC_URL = '/static/'
 import os
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
+
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
