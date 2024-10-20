@@ -14,3 +14,5 @@ PyMySQL==1.1.1
 sqlparse==0.5.1
 typing_extensions==4.12.2
 whitenoise==6.7.0
+drf-spectacular>=0.27.2
+drf-yasg>=1.21.7
