@@ -1,4 +1,4 @@
-# **BE Capstone Project: E-commerce Product API**
+# **E-commerce Product API**
 
 ## **Project Overview**
 Implementing an E-commerce Product API using Django and Django REST Framework. This API will serve as the backend for managing products on an e-commerce platform, allowing users to create, update, delete, and view products. You will build and deploy a fully functional API, mimicking the real-world responsibilities of a backend developer in the e-commerce space, focusing on product management, user authentication, and search functionality.
@@ -7,7 +7,7 @@ Implementing an E-commerce Product API using Django and Django REST Framework. T
 
 ### **Product Management (CRUD):**
 - Ability to Create, Read, Update, and Delete (CRUD) products.
-- Each product should have the following attributes:
+- Each product have the following attributes:
   - Name
   - Description
   - Price
@@ -15,22 +15,21 @@ Implementing an E-commerce Product API using Django and Django REST Framework. T
   - Stock Quantity
   - Image URL
   - Created Date
-- Ensure validation for required fields like Price, Name, and Stock Quantity.
-- Make sure the Stock Quantity is automatically reduced when an order is placed (future enhancement or consider as optional for now).
-
+- Validation for required fields like Price, Name, and Stock Quantity.
+- Stock Quantity is automatically reduced when an order is placed.
+- 
 ### Users Management (CRUD):
-- Implement CRUD operations for users who will manage the products.
+- CRUD operations for users who will manage the products.
 - Username, Email, and Password.
 - Only authenticated users will be able to manage products (i.e., create, update, delete).
 
 ### Product Search:
 - Endpoint to search for products by Name or Category.
-- Allow for partial matches in product names for flexible search results.
 - Pagination for search results to improve performance when there are many products.
 
 ### **Product View:**
 - Endpoint to retrieve a list of products or view individual product details by Product ID.
-- Include an optional filter for users to view products by:
+- Optional filter for users to view products by:
   - Category
   - Price Range
   - Stock Availability
